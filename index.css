@@ -1,0 +1,175 @@
+html {
+	font-family: sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-border;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* 100% высоты окна браузера */
+  margin: 0;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between; /* Раскидает 3 элемента: лево, центр, право */
+  align-items: center;          /* Выровняет их по вертикальной оси */
+  padding: 15px 30px;
+  background-color: #ecbe92;
+	box-shadow: 0 2px 10px rgba(6, 2, 2, 0.308);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Картинка слева */
+.img-logo {
+  width: 100px; /* Твой размер картинки */
+  height: auto;
+  display: block;
+}
+
+/* Название РОВНО ПО ЦЕНТРУ */
+.site-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+	font-size: xx-large;
+	margin-right: 20px;
+
+}
+
+.main-nav a:hover {
+  color: #d86262e8
+
+}
+
+.main-nav {
+	margin-right: 30px;
+	margin-top: 10px;
+}
+
+.nav-list {
+	list-style: none;   /* убирает точки/маркеры */
+	padding-left: 0;
+	margin-bottom: 1rem;
+	font-weight: bold;
+	font-size: x-large;
+}
+
+.main-container-nav {
+	max-width: 900px;    /* Чтобы текст не растягивался на весь широкий монитор */
+  margin: 50px auto;   /* 50px сверху/снизу, auto центрирует блок по горизонтали */
+  padding: 0 20px;     /* Внутренние отступы, чтобы на мобилках текст не лип к краям */
+  text-align: center;
+	flex: 1;
+}
+
+h1 {
+  font-size: 36px;
+  color: #2b2b2b;
+  margin-bottom: 15px; /* Отступ до текста снизу */
+}
+
+p {
+  font-size: 18px;
+  color: #666666;      /* Чуть более мягкий серый цвет текста */
+  line-height: 1.6;     /* Межстрочный интервал, чтобы текст легко читался */
+  margin-bottom: 30px;
+}
+
+.btn {
+	font-size: 25px;
+}
+
+.main-container a:hover {
+	color: #d86262e8
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; /* Теперь сработает и прижмет к низу! */
+  height: 50px;         /* 👈 Задаем явную высоту полосы */
+  padding-bottom: 15px;  /* Небольшой зазор от самого дна */
+  padding-left: 20px;
+	padding-top: 40px;
+  background-color: #f4f4f4;
+}
+
+.cards-grid {
+  display: flex;
+  gap: 20px;               /* Расстояние между карточками */
+  justify-content: center; /* Центрируем карточки */
+  flex-wrap: wrap;         /* Чтобы на мобилках они перенослись друг под друга */
+}
+
+/* Стиль одной карточки */
+.recipe-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 15px;
+  width: 280px;            /* Фиксированная ширина карточки */
+  background-color: #e6b89dbe;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.288);
+}
+
+.card-img {
+	width: 200px; /* Твой размер картинки */
+	height: auto;
+	border-radius: 12px;
+}
+.main-container {
+	max-width: 900px;    /* Чтобы текст не растягивался на весь широкий монитор */
+  margin: 50px auto;   /* 50px сверху/снизу, auto центрирует блок по горизонтали */
+  padding: 0 20px;     /* Внутренние отступы, чтобы на мобилках текст не лип к краям */
+  text-align: left;
+	flex: 1;
+}
+
+.recipes-list {
+	margin-top: 10px;
+	font-weight: 400;
+	font-size: large;
+	margin-left: 20px;
+}
+
+.ingridients {
+	margin-top: 15px;
+	margin-left: 10px;
+}
+
+.cook-list {
+	list-style: none;   /* убирает точки/маркеры */
+	padding-left: 0;
+	font-size: 18px;
+	font-weight: 250;
+	margin-top: 10px;
+}
+
+.cook-list li {
+	margin-bottom: 10px;
+}
+
+.cook {
+margin-top: 10px;
+margin-left: 10px;
+}
+.cook-list li:last-child {
+  margin-bottom: 0;
+}
+html {
+  scroll-behavior: smooth; /* 👈 Делает прокрутку по якорям мягкой и красивой */
+}
+.sovet {
+	font-size: 20px;
+	font-weight: 250;
+	
+}
+	
