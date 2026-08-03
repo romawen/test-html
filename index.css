@@ -5,7 +5,7 @@ html {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-border;
+  box-sizing: border-box;
 }
 
 body {
@@ -13,6 +13,7 @@ body {
   flex-direction: column;
   min-height: 100vh; /* 100% высоты окна браузера */
   margin: 0;
+	background-color: pink;
 }
 
 .site-header {
